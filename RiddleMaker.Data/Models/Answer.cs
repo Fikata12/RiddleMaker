@@ -1,5 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 using System.ComponentModel.DataAnnotations;
+using RiddleMaker.Common.EntityConfiguration;
 
 namespace RiddleMaker.Data.Models
 {
@@ -13,7 +14,7 @@ namespace RiddleMaker.Data.Models
         [Key]
         public int Id { get; set; }
 
-        [MaxLength(20)]
+        [MaxLength(ValidationConstants.AnswerLength)]
         public string Text { get; set; } = null!;
 
         public virtual ICollection<Riddle> Riddles { get; set; } = null!;
