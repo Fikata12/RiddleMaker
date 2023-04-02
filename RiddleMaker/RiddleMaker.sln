@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiddleMaker.Data", "..\Ridd
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiddleMaker.Core", "..\RiddleMaker.Core\RiddleMaker.Core.csproj", "{556D75E3-8CD3-4B4B-A040-04CE0BDCC760}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiddleMaker.Common", "..\RiddleMaker.Common\RiddleMaker.Common.csproj", "{26DACC9E-64C0-4F9D-9281-0C3A11216C5C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{556D75E3-8CD3-4B4B-A040-04CE0BDCC760}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{556D75E3-8CD3-4B4B-A040-04CE0BDCC760}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{556D75E3-8CD3-4B4B-A040-04CE0BDCC760}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26DACC9E-64C0-4F9D-9281-0C3A11216C5C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26DACC9E-64C0-4F9D-9281-0C3A11216C5C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26DACC9E-64C0-4F9D-9281-0C3A11216C5C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26DACC9E-64C0-4F9D-9281-0C3A11216C5C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

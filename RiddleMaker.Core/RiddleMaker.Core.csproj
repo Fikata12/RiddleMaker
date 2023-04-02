@@ -12,4 +12,9 @@
     <Folder Include="Services\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RiddleMaker.Common\RiddleMaker.Common.csproj" />
+    <ProjectReference Include="..\RiddleMaker.Data\RiddleMaker.Data.csproj" />
+  </ItemGroup>
+
 </Project>
