@@ -1,4 +1,5 @@
 ﻿using Microsoft.EntityFrameworkCore;
+
 using RiddleMaker.Common.DataConfiguration;
 using RiddleMaker.Data.Models;
 

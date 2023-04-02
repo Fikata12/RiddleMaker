@@ -15,7 +15,6 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RiddleMaker.Common\RiddleMaker.Common.csproj" />
-    <ProjectReference Include="..\RiddleMaker.Core\RiddleMaker.Core.csproj" />
   </ItemGroup>
 
 </Project>
