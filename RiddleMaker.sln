@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.33516.290
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiddleMaker.Web", "RiddleMaker\RiddleMaker.Web.csproj", "{52CC846F-039C-4B1F-B4EF-63E50F95AF6F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiddleMaker.Web", "RiddleMaker.Web\RiddleMaker.Web.csproj", "{52CC846F-039C-4B1F-B4EF-63E50F95AF6F}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiddleMaker.Data", "RiddleMaker.Data\RiddleMaker.Data.csproj", "{AF8FE330-2DB1-448C-B24A-022B8B8A67D2}"
 EndProject
@@ -11,15 +11,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiddleMaker.Common", "Riddl
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Data", "Data", "{56A6889E-E01F-4174-8DBB-4CAC5317EFFB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiddleMaker.Data.Models", "RiddleMaker.Data.Models\RiddleMaker.Data.Models.csproj", "{993F9FD3-36D4-4AE1-8C57-C6233FD5B048}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiddleMaker.Data.Models", "RiddleMaker.Data.Models\RiddleMaker.Data.Models.csproj", "{993F9FD3-36D4-4AE1-8C57-C6233FD5B048}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Web", "Web", "{040B72BE-6919-47B4-BB9C-B4B763693BD1}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Services", "Services", "{65F08A5C-A6AE-40E7-AFE7-3BCE47F41728}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiddleMaker.Services.Mapping", "RiddleMaker.Services.Mapping\RiddleMaker.Services.Mapping.csproj", "{BEA78FB5-2011-42F1-B580-A16DDE1F7928}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiddleMaker.Services.Mapping", "RiddleMaker.Services.Mapping\RiddleMaker.Services.Mapping.csproj", "{BEA78FB5-2011-42F1-B580-A16DDE1F7928}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiddleMaker.Services.Data", "RiddleMaker.Services.Data\RiddleMaker.Services.Data.csproj", "{9ECB1EB3-9414-4C4B-93F9-68C928716B14}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RiddleMaker.Services.Data", "RiddleMaker.Services.Data\RiddleMaker.Services.Data.csproj", "{9ECB1EB3-9414-4C4B-93F9-68C928716B14}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RiddleMaker.Web.ViewModels", "RiddleMaker.Web.ViewModels\RiddleMaker.Web.ViewModels.csproj", "{C6721C2F-FECA-4C78-B70E-3684C4B253D5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{9ECB1EB3-9414-4C4B-93F9-68C928716B14}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9ECB1EB3-9414-4C4B-93F9-68C928716B14}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9ECB1EB3-9414-4C4B-93F9-68C928716B14}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C6721C2F-FECA-4C78-B70E-3684C4B253D5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C6721C2F-FECA-4C78-B70E-3684C4B253D5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C6721C2F-FECA-4C78-B70E-3684C4B253D5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C6721C2F-FECA-4C78-B70E-3684C4B253D5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -61,6 +67,7 @@ Global
 		{993F9FD3-36D4-4AE1-8C57-C6233FD5B048} = {56A6889E-E01F-4174-8DBB-4CAC5317EFFB}
 		{BEA78FB5-2011-42F1-B580-A16DDE1F7928} = {65F08A5C-A6AE-40E7-AFE7-3BCE47F41728}
 		{9ECB1EB3-9414-4C4B-93F9-68C928716B14} = {65F08A5C-A6AE-40E7-AFE7-3BCE47F41728}
+		{C6721C2F-FECA-4C78-B70E-3684C4B253D5} = {040B72BE-6919-47B4-BB9C-B4B763693BD1}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {6F2969D1-D1A9-4AE0-B4A2-B9086B1FEF6F}
