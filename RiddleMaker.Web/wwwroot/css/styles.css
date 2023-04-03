@@ -1,0 +1,70 @@
+body {
+    background-image: url(/images/bg.png);
+    background-size: cover;
+    margin: 0%;
+}
+
+header {
+    text-align: center;
+    font-size: 300%;
+    color: white;
+    font-family: MoonGet;
+}
+
+#menu {
+    border: 10px solid #444;
+    width: fit-content;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(/images/menu-bg.png);
+    border-radius: 50px;
+    text-align: center;
+    padding: 2% 10%;
+}
+
+#counter {
+    font-family: Burbank;
+    color: white;
+    font-size: 350%;
+}
+
+.button {
+    width: fit-content;
+    text-decoration: none;
+    font-size: 400%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5%;
+    margin-bottom: 3%;
+    font-family: Burbank;
+    color: white;
+    background-color: #333;
+    padding: 2% 8%;
+    border-radius: 30px;
+    border: 5px solid #444;
+}
+
+#menu textarea {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    margin-top: 1%;
+    display: block;
+    resize: none;
+    background-color: #444;
+    color: white;
+    border: 1px solid white;
+    font-size: 160%;
+    padding: 2%;
+}
+
+@font-face {
+    font-family: MoonGet;
+    src: url(/fonts/moon_get-Heavy.ttf);
+}
+
+@font-face {
+    font-family: Burbank;
+    src: url(/fonts/BurbankBigCondensed-Black.otf);
+}
