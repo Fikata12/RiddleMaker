@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 
 namespace RiddleMaker.Web.ViewModels
 {
-    public class AddViewModel
+    public class AddRiddleViewModel
     {
         [MaxLength(ValidationConstants.RiddleLength)]
         public string Riddle { get; set; } = null!;
