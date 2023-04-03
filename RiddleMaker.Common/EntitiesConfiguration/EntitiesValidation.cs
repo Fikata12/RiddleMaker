@@ -1,6 +1,6 @@
 ﻿namespace RiddleMaker.Common.EntityConfiguration
 {
-    public static class ValidationConstants
+    public static class EntitiesValidation
     {
         //Riddle
         public const int RiddleLength = 217;
