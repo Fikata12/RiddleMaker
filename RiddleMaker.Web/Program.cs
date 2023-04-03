@@ -30,6 +30,14 @@ namespace RiddleMaker.Web
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
 
+            app.MapControllerRoute(
+                name: "add",
+                pattern: "{controller=Add}/{action=Add}");
+
+            app.MapControllerRoute(
+                name: "get",
+                pattern: "{controller=Get}/{action=Get}");
+
             app.Run();
         }
     }
