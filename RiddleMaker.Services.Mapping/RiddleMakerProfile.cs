@@ -8,6 +8,7 @@ namespace RiddleMaker.Services.Mapping
     {
         public RiddleMakerProfile()
         {
+            //Add riddle
             CreateMap<AddRiddleViewModel, Riddle>()
                 .ForMember(d => d.Text,
                          opt => opt.MapFrom(s => s.Riddle))
@@ -16,6 +17,11 @@ namespace RiddleMaker.Services.Mapping
                          {
                              Text = s.Answer
                          }));
+
+            //Get riddle
+            CreateMap<Riddle, GetRiddleViewModel>()
+                .ForMember(d => d.Riddle, 
+                         opt => opt.MapFrom(s => s.Text));
         }
     }
 }
