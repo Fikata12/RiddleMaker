@@ -1,4 +1,4 @@
-namespace RiddleMaker
+namespace RiddleMaker.Web
 {
     public class Program
     {
