@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RiddleMaker.Data;
 
@@ -10,9 +11,10 @@ using RiddleMaker.Data;
 namespace RiddleMaker.Data.Migrations
 {
     [DbContext(typeof(RiddleMakerContext))]
-    partial class RiddleMakerContextModelSnapshot : ModelSnapshot
+    [Migration("20230403152048_ChangeRiddleMaxLength")]
+    partial class ChangeRiddleMaxLength
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,8 +33,8 @@ namespace RiddleMaker.Data.Migrations
 
                     b.Property<string>("Text")
                         .IsRequired()
-                        .HasMaxLength(31)
-                        .HasColumnType("nvarchar(31)");
+                        .HasMaxLength(20)
+                        .HasColumnType("nvarchar(20)");
 
                     b.HasKey("Id");
 
@@ -52,8 +54,8 @@ namespace RiddleMaker.Data.Migrations
 
                     b.Property<string>("Text")
                         .IsRequired()
-                        .HasMaxLength(217)
-                        .HasColumnType("nvarchar(217)");
+                        .HasMaxLength(210)
+                        .HasColumnType("nvarchar(210)");
 
                     b.HasKey("Id");
 
