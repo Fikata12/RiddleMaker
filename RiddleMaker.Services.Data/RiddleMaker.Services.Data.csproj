@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\RiddleMaker.Common\RiddleMaker.Common.csproj" />
+    <ProjectReference Include="..\RiddleMaker.Services.Mapping\RiddleMaker.Services.Mapping.csproj" />
+  </ItemGroup>
+
 </Project>
