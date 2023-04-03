@@ -2,9 +2,10 @@
 
 namespace RiddleMaker.Web.Controllers
 {
-    public class HomeController : Controller
+    public class GetController : Controller
     {
-        public IActionResult Index()
+        [HttpGet]
+        public IActionResult Get()
         {
             return View();
         }
