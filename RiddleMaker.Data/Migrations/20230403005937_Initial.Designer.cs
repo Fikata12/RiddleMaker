@@ -11,8 +11,8 @@ using RiddleMaker.Data;
 namespace RiddleMaker.Data.Migrations
 {
     [DbContext(typeof(RiddleMakerContext))]
-    [Migration("20230402134707_Inital")]
-    partial class Inital
+    [Migration("20230403005937_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
