@@ -30,6 +30,7 @@ header {
 }
 
 .button {
+    cursor: pointer;
     width: fit-content;
     text-decoration: none;
     font-size: 400%;
