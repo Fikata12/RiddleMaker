@@ -10,7 +10,7 @@ namespace RiddleMaker.Data.Models
         [Key]
         public int Id { get; set; }
 
-        [MaxLength(ValidationConstants.RiddleLength)]
+        [MaxLength(EntitiesValidation.RiddleLength)]
         public string Text { get; set; } = null!;
 
         [ForeignKey("Answer")]

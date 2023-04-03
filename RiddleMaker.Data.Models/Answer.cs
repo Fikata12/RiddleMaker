@@ -14,7 +14,7 @@ namespace RiddleMaker.Data.Models
         [Key]
         public int Id { get; set; }
 
-        [MaxLength(ValidationConstants.AnswerLength)]
+        [MaxLength(EntitiesValidation.AnswerLength)]
         public string Text { get; set; } = null!;
 
         public virtual ICollection<Riddle> Riddles { get; set; } = null!;
