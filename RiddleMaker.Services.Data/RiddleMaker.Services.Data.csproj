@@ -12,6 +12,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\RiddleMaker.Data\RiddleMaker.Data.csproj" />
+    <ProjectReference Include="..\RiddleMaker.Web.ViewModels\RiddleMaker.Web.ViewModels.csproj" />
   </ItemGroup>
 
 </Project>
