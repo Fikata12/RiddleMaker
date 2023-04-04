@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-using RiddleMaker.Common.DataConfiguration;
+using RiddleMaker.Common;
 using RiddleMaker.Data.Models;
 
 namespace RiddleMaker.Data
