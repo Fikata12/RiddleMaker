@@ -1,4 +1,5 @@
 ﻿using AutoMapper;
+
 using RiddleMaker.Data.Models;
 using RiddleMaker.Web.ViewModels;
 
