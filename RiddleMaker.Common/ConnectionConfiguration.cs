@@ -1,4 +1,4 @@
-﻿namespace RiddleMaker.Common.DataConfiguration
+﻿namespace RiddleMaker.Common
 {
     public static class ConnectionConfiguration
     {

@@ -1,4 +1,4 @@
-﻿namespace RiddleMaker.Common.ViewModelsConfiguration
+﻿namespace RiddleMaker.Common
 {
     public static class ViewModelsValidation
     {

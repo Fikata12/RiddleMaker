@@ -1,4 +1,4 @@
-﻿namespace RiddleMaker.Common.EntityConfiguration
+﻿namespace RiddleMaker.Common
 {
     public static class EntitiesValidation
     {
