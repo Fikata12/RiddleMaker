@@ -1,5 +1,6 @@
 ﻿using AutoMapper;
 using Microsoft.EntityFrameworkCore;
+
 using RiddleMaker.Data;
 using RiddleMaker.Data.Models;
 using RiddleMaker.Web.ViewModels;
@@ -44,9 +45,20 @@ namespace RiddleMaker.Services.Data
             return mapper.Map<GetRiddleViewModel>(riddle);
         }
 
-        public async Task<bool> CheckAnswer(int riddleId, string answer)
+        public async Task<bool> CheckAnswerAsync(int riddleId, string? answer)
         {
-            return (await context.Riddles.FindAsync(riddleId))!.Text.ToLower() == answer.ToLower();
+            bool result = (await context.Riddles.FindAsync(riddleId))!.Answer.Text.ToLower() == answer?.ToLower();
+            return result;
         }
-    }
+
+		public async Task<Riddle> GetRiddleByIdAsync(int riddleId)
+        {
+            return (await context.Riddles.FindAsync(riddleId))!;
+        }
+
+        public async Task<int> RiddlesCountAsync()
+        {
+            return await context.Riddles.CountAsync();
+        }
+	}
 }
