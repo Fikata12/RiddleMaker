@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-using RiddleMaker.Common.EntityConfiguration;
+using RiddleMaker.Common;
 
 namespace RiddleMaker.Data.Models
 {
