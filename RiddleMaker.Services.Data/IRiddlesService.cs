@@ -9,7 +9,10 @@ namespace RiddleMaker.Services.Data
 
         Task<GetRiddleViewModel?> GetRandomRiddleAsync();
 
-        Task<bool> CheckAnswer(int riddleId, string answer);
+        Task<bool> CheckAnswerAsync(int riddleId, string? answer);
 
+        Task<Riddle> GetRiddleByIdAsync(int riddleId);
+
+        Task<int> RiddlesCountAsync();
 	}
 }
