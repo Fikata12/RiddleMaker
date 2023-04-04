@@ -1,6 +1,6 @@
-﻿using RiddleMaker.Common.EntityConfiguration;
-using RiddleMaker.Common.ViewModelsConfiguration;
-using System.ComponentModel.DataAnnotations;
+﻿using System.ComponentModel.DataAnnotations;
+
+using RiddleMaker.Common;
 
 namespace RiddleMaker.Web.ViewModels
 {
