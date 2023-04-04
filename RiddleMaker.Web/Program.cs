@@ -1,5 +1,6 @@
 using Microsoft.EntityFrameworkCore;
-using RiddleMaker.Common.DataConfiguration;
+
+using RiddleMaker.Common;
 using RiddleMaker.Data;
 using RiddleMaker.Services.Data;
 using RiddleMaker.Services.Mapping;
@@ -13,10 +14,11 @@ namespace RiddleMaker.Web
             var builder = WebApplication.CreateBuilder(args);
 
             // Add services to the container.
+
             builder.Services.AddDbContext<RiddleMakerContext>(opt => 
             opt.UseSqlServer(ConnectionConfiguration.ConnectionString));
 
-            builder.Services.AddControllersWithViews();
+			builder.Services.AddControllersWithViews();
 
             builder.Services.AddAutoMapper(cfg =>
             {

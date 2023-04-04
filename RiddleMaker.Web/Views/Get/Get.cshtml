@@ -1,17 +1,30 @@
-﻿@model RiddleMaker.Web.ViewModels.GetRiddleViewModel
-<div id="menu">
-	@if (Model.IsCorrect)
-	{
+﻿@model RiddleMaker.Web.ViewModels.GetRiddleViewModel?
+@{
+    ViewData["Title"] = "Riddle Time";
+}
+@if (Model == null)
+{
+	<div id="menu">
+		<textarea disabled placeholder="No riddles yet..." cols="30" rows="7" id="client-riddle"></textarea>
+		<textarea disabled placeholder="Your answer..." cols="30" rows="1" id="client-answer"></textarea>
+		<button class="button" id="submitAnswer" type="submit">Submit</button>
+	</div>
+}
+else if (Model.IsCorrect)
+{
+	<div id="menu" style="padding: 2% 5%;">
 		<h1>@Model.Message</h1>
-		<a href="/Get">Another one</a>
-	}
-	else
-	{
-		<h1>@Model.Message</h1>
-		<form asp-controller="Get" asp-action="CheckAnswer" asp-route-id="@Model.Id" asp-route-riddle="@Model.Riddle">
+		<a href="/Get" class="button">Next</a>
+	</div>
+}
+else
+{
+	<div id="menu">
+		<h1 style="">@Model.Message</h1>
+		<form asp-controller="Get" asp-action="CheckAnswer" asp-route-id="@Model.Id" method="post">
 			<textarea disabled placeholder="No riddles yet..." cols="30" rows="7" id="client-riddle" name="Riddle">@Model.Riddle</textarea>
-			<textarea placeholder="Your answer..." cols="30" rows="1" id="client-answer" maxlength="31" name="UserAnswer"></textarea>
+			<textarea placeholder="Your answer..." cols="30" rows="1" id="client-answer" maxlength="31" name="UserAnswer" required></textarea>
 			<button class="button" id="submitAnswer" type="submit">Submit</button>
 		</form>
-	}
-</div>
+	</div>
+}

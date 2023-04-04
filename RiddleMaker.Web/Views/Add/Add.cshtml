@@ -1,4 +1,7 @@
-﻿<div id="menu">
+﻿@{
+    ViewData["Title"] = "Add Riddle";
+}
+<div id="menu">
 	<form asp-controller="Add" asp-action="Add" method="post">
 		<textarea placeholder="Riddle..." cols="30" rows="7" id="riddle" maxlength="217" name="Riddle" required></textarea>
 		<textarea placeholder="Answer..." cols="30" rows="1" id="answer" maxlength="31" name="Answer" required></textarea>

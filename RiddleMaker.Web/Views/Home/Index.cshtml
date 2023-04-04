@@ -1,10 +1,10 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
-
+@model int
 <div id="menu">
     <p id="counter">
-        Number of riddles: <span id="count">0</span>
+        Number of riddles: <span id="count">@Model</span>
     </p>
     <a class="button" id="add" asp-controller="Add" asp-action="">Add riddle</a>
     <a class="button" id="get" asp-controller="Get" asp-action="">Riddle Time</a>

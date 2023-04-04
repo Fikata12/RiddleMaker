@@ -2,6 +2,7 @@ body {
     background-image: url(/images/bg.png);
     background-size: cover;
     margin: 0%;
+    zoom: 90%;
 }
 
 header {
@@ -58,6 +59,13 @@ header {
     border: 1px solid white;
     font-size: 160%;
     padding: 2%;
+}
+
+#menu h1 {
+    font-family: Burbank;
+    font-size: 500%;
+    margin: 0px 0px 10px 0px;
+    color: white;
 }
 
 @font-face {

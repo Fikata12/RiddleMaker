@@ -21,9 +21,4 @@
     <ProjectReference Include="..\RiddleMaker.Web.ViewModels\RiddleMaker.Web.ViewModels.csproj" />
   </ItemGroup>
 
-  <ItemGroup>
-    <Folder Include="Views\WrongAnswer\" />
-    <Folder Include="Views\RightAnswer\" />
-  </ItemGroup>
-
 </Project>
