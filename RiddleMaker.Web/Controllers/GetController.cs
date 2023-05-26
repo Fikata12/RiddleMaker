@@ -16,7 +16,7 @@ namespace RiddleMaker.Web.Controllers
 		}
 
 		[HttpGet]
-		public async Task<IActionResult> Get()
+		public async Task<IActionResult> Index()
 		{
 			return View(await riddlesService.GetRandomRiddleAsync());
 		}
@@ -35,7 +35,7 @@ namespace RiddleMaker.Web.Controllers
 				model.IsCorrect = false;
 				model.Message = Messages.WrongAnswerMessage;
 			}
-			return View("Get", model);
+			return View("Index", model);
 		}
 	}
 }
