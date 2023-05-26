@@ -15,7 +15,7 @@ namespace RiddleMaker.Web.Controllers
         }
 
         [HttpGet]
-        public IActionResult Add()
+        public IActionResult Index()
         {
             return View();
         }
