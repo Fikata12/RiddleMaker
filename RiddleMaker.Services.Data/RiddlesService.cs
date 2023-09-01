@@ -33,14 +33,12 @@ namespace RiddleMaker.Services.Data
             }
 
             Random rnd = new Random();
-            int index = rnd.Next(1, await context.Riddles.CountAsync() + 1);
 
-            Riddle? riddle = await context.Riddles.FindAsync(index);
-            while (riddle == null)
-            {
-                index = rnd.Next(1, await context.Riddles.CountAsync());
-                riddle = await context.Riddles.FindAsync(index);
-            }
+            int[] riddlesIds = await context.Riddles.Select(r => r.Id).ToArrayAsync();
+
+            int index = rnd.Next(0, riddlesIds.Length);
+
+            Riddle? riddle = await context.Riddles.FindAsync(riddlesIds[index]);
 
             return mapper.Map<GetRiddleViewModel>(riddle);
         }
