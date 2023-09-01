@@ -23,10 +23,10 @@ Riddle Maker is all about having a good time, testing your brainpower, and shari
 
 ![Екранна снимка 2023-09-01 200048](https://github.com/Fikata12/RiddleMaker/assets/90516828/79bfb66c-2010-4864-b838-77fa1246b47c)
 
-- #### Wrong Ansnwer
+- #### Wrong Answer
 
   ![Екранна снимка 2023-09-01 200102](https://github.com/Fikata12/RiddleMaker/assets/90516828/de61deb5-b4fb-4e95-9912-dacefdcab7dd)
 
-- #### Corrrect Ansnwer
+- #### Corrrect Answer
 
 ![Екранна снимка 2023-09-01 200113](https://github.com/Fikata12/RiddleMaker/assets/90516828/e59d36d9-be85-4e77-a33f-0563dd1ac96c)
