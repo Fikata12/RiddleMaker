@@ -16,7 +16,11 @@ Riddle Maker is all about having a good time, testing your brainpower, and shari
 - Microsoft SQL Server
 - Entity Framework Core
 - AutoMapper
-  
+
+## Database Diagram
+
+![Екранна снимка 2023-09-01 201647](https://github.com/Fikata12/RiddleMaker/assets/90516828/a1473330-1450-4aed-a729-ef50a90b4b80)
+
 ## Screenshots
 - #### Home
 
