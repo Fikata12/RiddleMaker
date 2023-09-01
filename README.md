@@ -10,6 +10,13 @@ Riddle Maker is a web application built with ASP.NET MVC. It's a simple and fun 
 
 Riddle Maker is all about having a good time, testing your brainpower, and sharing riddles with friends. Give it a try and enjoy some riddle-solving fun!
 
+## Built With
+
+- ASP.NET Core 6.0
+- Microsoft SQL Server
+- Entity Framework Core
+- AutoMapper
+  
 ## Screenshots
 - #### Home
 
